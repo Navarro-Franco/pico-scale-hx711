@@ -1,5 +1,15 @@
 # pico-scale
 
+## Connection 
+![image](https://github.com/Navarro-Franco/pico-scale-hx711/assets/67747393/9f8cbbf2-5853-48e9-a39e-2a6de01e24c7)
+
+PICO_PIN|HX-711
+---|---
+GND | GND
+GP14| DT
+GP15| SCK
+3v3 OUT| VCC
+
 ## NOTE: DOCUMENTATION IS OLD. REFER TO [the test code](tests/main.c) for an example
 
 A scale API for a Raspberry Pi Pico (RP2040).
