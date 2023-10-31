@@ -16,7 +16,7 @@ A scale API for a Raspberry Pi Pico (RP2040).
 
 ![resources/hx711_serialout.gif](resources/hx711_serialout.gif)
 
-The .gif above illustrates the [current example code](main.c) obtaining data from a HX711 operating at 80 samples per second. Each line shows the current weight calculated from all samples obtained within 250 milliseconds, along with the minimum and maximum weights of the scale since boot. I applied pressure to the load cell to show the change in weight.
+The .gif above illustrates the [current example code](tests/main.c) obtaining data from a HX711 operating at 80 samples per second. Each line shows the current weight calculated from all samples obtained within 250 milliseconds, along with the minimum and maximum weights of the scale since boot. I applied pressure to the load cell to show the change in weight.
 
 ## Clone
 
@@ -25,7 +25,7 @@ The .gif above illustrates the [current example code](main.c) obtaining data fro
 If you want to use this repository as-is with the example code, clone the respository and initialise the `hx711-pico-c` submodule.
 
 ```console
-git clone --recurse-submodules --remote-submodules https://github.com/endail/pico-scale
+git clone --recurse-submodules --remote-submodules https://github.com/Navarro-Franco/pico-scale-hx711
 ```
 
 Then `#include` as follows:
@@ -42,7 +42,7 @@ Run CTest to build the example and calibration programs. The `.uf2` files you up
 Alternatively, if you want to use the scale functionality as an API in your own project, add `pico-scale` as a submodule and then initialise it.
 
 ```console
-git submodule add https://github.com/endail/pico-scale extern/pico-scale
+git submodule add https://github.com/Navarro-Franco/pico-scale-hx711 extern/pico-scale
 git submodule update --init --remote --recursive
 ```
 
